@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Алексей — разработчик сайтов и приложений</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="avatar">А</div>
+        <div class="hero-text">
+          <h1>Алексей</h1>
+          <p class="subtitle">Разработчик сайтов и мобильных приложений</p>
+          <p class="bio">Делаю сайты и приложения с чистым кодом и приятным интерфейсом.<br>Работаю дистанционно, сдаю в срок.</p>
+          <div class="tags">
+            <span class="tag tag-web">Сайты</span>
+            <span class="tag tag-app">Мобильные приложения</span>
+            <span class="tag tag-web">HTML / CSS</span>
+            <span class="tag tag-app">Flutter</span>
+            <span class="tag tag-web">React Native</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="section">
+      <div class="section-label">Работы</div>
+      <div class="projects-grid">
+
+        <article class="card">
+          <div class="card-thumb thumb-purple">
+            <div class="thumb-label">DDChat</div>
+            <div class="thumb-sub">Мессенджер · Flutter</div>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">DDChat — защищённый мессенджер</h2>
+            <p class="card-desc">Мессенджер со сквозным шифрованием E2EE, голосовыми и видеозвонками WebRTC, сторис и нулевым доступом сервера к данным.</p>
+            <div class="card-tags">
+              <span class="tag tag-app">Flutter</span>
+              <span class="tag tag-app">FastAPI</span>
+              <span class="tag tag-app">WebRTC</span>
+              <span class="tag tag-web">E2EE</span>
+            </div>
+            <ul class="card-features">
+              <li>🔐 X25519 + ChaCha20 + Ed25519</li>
+              <li>📞 Голосовые и видеозвонки P2P</li>
+              <li>👥 Группы, каналы, сторис</li>
+            </ul>
+            <div class="card-links">
+              <a class="btn" href="https://github.com/DDmsngr/deepdrift-secure" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-thumb thumb-teal">
+            <div class="thumb-label">КОТТ</div>
+            <div class="thumb-sub">Приложение · Android</div>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">КОТТ — учёт произведений искусства</h2>
+            <p class="card-desc">Приложение для художников: реестр работ, автоматические PDF-документы, учёт выставок и продаж. Работает офлайн, без регистрации.</p>
+            <div class="card-tags">
+              <span class="tag tag-app">Android</span>
+              <span class="tag tag-web">HTML / CSS</span>
+              <span class="tag tag-app">Offline</span>
+            </div>
+            <ul class="card-features">
+              <li>📄 PDF-документы за 10 секунд</li>
+              <li>📴 Работает без интернета</li>
+              <li>🏛 Выставки → CV автоматически</li>
+            </ul>
+            <div class="card-links">
+              <a class="btn" href="https://ddmsngr.github.io/KOTT-site/" target="_blank">Сайт ↗</a>
+              <a class="btn btn-outline" href="https://www.rustore.ru/catalog/app/ru.kott.app" target="_blank">RuStore ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card-new">
+          <div class="card-thumb thumb-gray">
+            <div class="thumb-label">Скоро</div>
+            <div class="thumb-sub">Новый проект</div>
+          </div>
+          <div class="card-body">
+            <h2 class="card-title">Следующий проект</h2>
+            <p class="card-desc">Здесь появится следующая работа. Если нужен сайт или приложение — напишите, обсудим задачу.</p>
+            <div class="card-links">
+              <a class="btn btn-outline" href="#contact">Написать ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-label">Контакты</div>
+      <div class="contacts-grid">
+
+        <div class="contacts-links">
+          <a class="contact-row" href="https://t.me/DDmsngr" target="_blank">
+            <span class="contact-icon ci-purple">TG</span>
+            <div class="contact-info">
+              <div class="contact-label">Telegram</div>
+              <div class="contact-value">@DDmsngr</div>
+            </div>
+            <span class="contact-arrow">→</span>
+          </a>
+          <a class="contact-row" href="https://github.com/DDmsngr" target="_blank">
+            <span class="contact-icon ci-dark">GH</span>
+            <div class="contact-info">
+              <div class="contact-label">GitHub</div>
+              <div class="contact-value">DDmsngr</div>
+            </div>
+            <span class="contact-arrow">→</span>
+          </a>
+          <a class="contact-row" href="mailto:9254652@bk.ru">
+            <span class="contact-icon ci-purple">@</span>
+            <div class="contact-info">
+              <div class="contact-label">Email</div>
+              <div class="contact-value">9254652@bk.ru</div>
+            </div>
+            <span class="contact-arrow">→</span>
+          </a>
+        </div>
+
+        <div id="contact" class="contact-form-wrap">
+          <p class="form-title">Написать напрямую</p>
+          <form
+            action="https://formspree.io/f/maqabkbj"
+            method="POST"
+            class="contact-form"
+            id="contactForm"
+          >
+            <div class="form-group">
+              <label for="name">Имя</label>
+              <input type="text" id="name" name="name" placeholder="Как вас зовут?" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email или Telegram</label>
+              <input type="text" id="email" name="email" placeholder="Как с вами связаться?" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Сообщение</label>
+              <textarea id="message" name="message" rows="4" placeholder="Опишите задачу..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-send">Отправить</button>
+            <p class="form-success" id="formSuccess">Сообщение отправлено! Отвечу в течение часа.</p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© 2026 Алексей</span>
+      <span>Сайты и приложения под ключ</span>
+    </div>
+  </footer>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    const success = document.getElementById('formSuccess');
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const data = new FormData(form);
+      const res = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+      if (res.ok) {
+        form.reset();
+        success.style.display = 'block';
+        setTimeout(() => success.style.display = 'none', 5000);
+      }
+    });
+  </script>
+
+</body>
+</html>
