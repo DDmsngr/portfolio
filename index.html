@@ -4,188 +4,462 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Алексей — разработчик сайтов и приложений</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <div class="noise"></div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo-img"><img src="logo.png" alt="Логотип" height="36" style="display:block"></a>
+      <div class="nav-links">
+        <a href="#projects">Работы</a>
+        <a href="#about">Обо мне</a>
+        <a href="#contact">Контакт</a>
+      </div>
+    </div>
+  </nav>
+
   <header class="hero">
+    <div class="hero-bg-text" aria-hidden="true">DEV</div>
     <div class="container">
-      <div class="hero-inner">
-        <div class="avatar">А</div>
-        <div class="hero-text">
-          <h1>Алексей</h1>
-          <p class="subtitle">Разработчик сайтов и мобильных приложений</p>
-          <p class="bio">Делаю сайты и приложения с чистым кодом и приятным интерфейсом.<br>Работаю дистанционно, сдаю в срок.</p>
-          <div class="tags">
-            <span class="tag tag-web">Сайты</span>
-            <span class="tag tag-app">Мобильные приложения</span>
-            <span class="tag tag-web">HTML / CSS</span>
-            <span class="tag tag-app">Flutter</span>
-            <span class="tag tag-web">React Native</span>
-          </div>
+      <div class="hero-eyebrow">
+        <span class="dot-live"></span>
+        Доступен для новых проектов
+      </div>
+      <h1 class="hero-title">
+        Создаю сайты<br>
+        <em>и приложения,</em><br>
+        которые работают
+      </h1>
+      <p class="hero-desc">
+        Разрабатываю продукты с чистым кодом, продуманным UX и вниманием к деталям.
+        От лендинга до мессенджера с E2EE-шифрованием — берусь за задачи любой сложности.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">Посмотреть работы</a>
+        <a href="#contact" class="btn-ghost">Написать</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">года в разработке</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">проектов</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">2</span>
+          <span class="stat-label">приложения в сторах</span>
         </div>
       </div>
     </div>
   </header>
 
-  <main class="container">
+  <div class="stack-bar">
+    <div class="stack-bar-track">
+      <span>Flutter</span><span class="bull">·</span>
+      <span>Dart</span><span class="bull">·</span>
+      <span>FastAPI</span><span class="bull">·</span>
+      <span>Python</span><span class="bull">·</span>
+      <span>WebRTC</span><span class="bull">·</span>
+      <span>HTML / CSS</span><span class="bull">·</span>
+      <span>JavaScript</span><span class="bull">·</span>
+      <span>Redis</span><span class="bull">·</span>
+      <span>Firebase</span><span class="bull">·</span>
+      <span>React Native</span><span class="bull">·</span>
+      <span>Tilda</span><span class="bull">·</span>
+      <span>GitHub Pages</span><span class="bull">·</span>
+      <span>Flutter</span><span class="bull">·</span>
+      <span>Dart</span><span class="bull">·</span>
+      <span>FastAPI</span><span class="bull">·</span>
+      <span>Python</span><span class="bull">·</span>
+      <span>WebRTC</span><span class="bull">·</span>
+      <span>HTML / CSS</span><span class="bull">·</span>
+      <span>JavaScript</span><span class="bull">·</span>
+      <span>Redis</span>
+    </div>
+  </div>
 
-    <section class="section">
-      <div class="section-label">Работы</div>
-      <div class="projects-grid">
-
-        <article class="card">
-          <div class="card-thumb thumb-purple">
-            <div class="thumb-label">DDChat</div>
-            <div class="thumb-sub">Мессенджер · Flutter</div>
-          </div>
-          <div class="card-body">
-            <h2 class="card-title">DDChat — защищённый мессенджер</h2>
-            <p class="card-desc">Мессенджер со сквозным шифрованием E2EE, голосовыми и видеозвонками WebRTC, сторис и нулевым доступом сервера к данным.</p>
-            <div class="card-tags">
-              <span class="tag tag-app">Flutter</span>
-              <span class="tag tag-app">FastAPI</span>
-              <span class="tag tag-app">WebRTC</span>
-              <span class="tag tag-web">E2EE</span>
-            </div>
-            <ul class="card-features">
-              <li>🔐 X25519 + ChaCha20 + Ed25519</li>
-              <li>📞 Голосовые и видеозвонки P2P</li>
-              <li>👥 Группы, каналы, сторис</li>
-            </ul>
-            <div class="card-links">
-              <a class="btn" href="https://github.com/DDmsngr/deepdrift-secure" target="_blank">GitHub ↗</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-thumb thumb-teal">
-            <div class="thumb-label">КОТТ</div>
-            <div class="thumb-sub">Приложение · Android</div>
-          </div>
-          <div class="card-body">
-            <h2 class="card-title">КОТТ — учёт произведений искусства</h2>
-            <p class="card-desc">Приложение для художников: реестр работ, автоматические PDF-документы, учёт выставок и продаж. Работает офлайн, без регистрации.</p>
-            <div class="card-tags">
-              <span class="tag tag-app">Android</span>
-              <span class="tag tag-web">HTML / CSS</span>
-              <span class="tag tag-app">Offline</span>
-            </div>
-            <ul class="card-features">
-              <li>📄 PDF-документы за 10 секунд</li>
-              <li>📴 Работает без интернета</li>
-              <li>🏛 Выставки → CV автоматически</li>
-            </ul>
-            <div class="card-links">
-              <a class="btn" href="https://ddmsngr.github.io/KOTT-site/" target="_blank">Сайт ↗</a>
-              <a class="btn btn-outline" href="https://www.rustore.ru/catalog/app/ru.kott.app" target="_blank">RuStore ↗</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="card card-new">
-          <div class="card-thumb thumb-gray">
-            <div class="thumb-label">Скоро</div>
-            <div class="thumb-sub">Новый проект</div>
-          </div>
-          <div class="card-body">
-            <h2 class="card-title">Следующий проект</h2>
-            <p class="card-desc">Здесь появится следующая работа. Если нужен сайт или приложение — напишите, обсудим задачу.</p>
-            <div class="card-links">
-              <a class="btn btn-outline" href="#contact">Написать ↗</a>
-            </div>
-          </div>
-        </article>
-
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title">Работы</h2>
       </div>
-    </section>
 
-    <section class="section">
-      <div class="section-label">Контакты</div>
-      <div class="contacts-grid">
-
-        <div class="contacts-links">
-          <a class="contact-row" href="https://t.me/DDmsngr" target="_blank">
-            <span class="contact-icon ci-purple">TG</span>
-            <div class="contact-info">
-              <div class="contact-label">Telegram</div>
-              <div class="contact-value">@DDmsngr</div>
+      <article class="project-card fade-up">
+        <div class="project-visual pv-purple">
+          <div class="chat-demo">
+            <div class="chat-header-bar">
+              <div class="chat-avatar">DD</div>
+              <div class="chat-name">DDChat <span class="enc-badge">🔐 E2EE</span></div>
             </div>
-            <span class="contact-arrow">→</span>
-          </a>
-          <a class="contact-row" href="https://github.com/DDmsngr" target="_blank">
-            <span class="contact-icon ci-dark">GH</span>
-            <div class="contact-info">
-              <div class="contact-label">GitHub</div>
-              <div class="contact-value">DDmsngr</div>
-            </div>
-            <span class="contact-arrow">→</span>
-          </a>
-          <a class="contact-row" href="mailto:9254652@bk.ru">
-            <span class="contact-icon ci-purple">@</span>
-            <div class="contact-info">
-              <div class="contact-label">Email</div>
-              <div class="contact-value">9254652@bk.ru</div>
-            </div>
-            <span class="contact-arrow">→</span>
-          </a>
+            <div class="chat-bubble left">Привет! Всё зашифровано?</div>
+            <div class="chat-bubble right">Да — X25519 + ChaCha20 ✓</div>
+            <div class="chat-bubble left">Звонок работает?</div>
+            <div class="chat-bubble right">WebRTC P2P 📞 без сервера</div>
+            <div class="chat-bubble left">Группы?</div>
+            <div class="chat-bubble right">Да, с симметричным ключом 👥</div>
+          </div>
+          <div class="float-badge fb1">Flutter 3.22</div>
+          <div class="float-badge fb2">E2EE</div>
+          <div class="float-badge fb3">WebRTC</div>
         </div>
+        <div class="project-info">
+          <div class="project-eyebrow">Проект 01 · Мобильное приложение</div>
+          <h3 class="project-name">DDChat</h3>
+          <p class="project-tagline">Защищённый мессенджер с нулевым доступом сервера</p>
+          <p class="project-body">
+            Полноценный мессенджер: голосовые и видеозвонки P2P через WebRTC, группы, каналы, сторис с реакциями. Каждый чат защищён уникальным ключом — сервер видит только зашифрованный шум.
+          </p>
+          <div class="feat-grid">
+            <div class="feat">
+              <span class="feat-ico">🔐</span>
+              <div>
+                <b>Шифрование</b>
+                <small>X25519 · ChaCha20 · Ed25519</small>
+              </div>
+            </div>
+            <div class="feat">
+              <span class="feat-ico">📞</span>
+              <div>
+                <b>Звонки P2P</b>
+                <small>WebRTC + TURN за NAT</small>
+              </div>
+            </div>
+            <div class="feat">
+              <span class="feat-ico">👥</span>
+              <div>
+                <b>Группы и каналы</b>
+                <small>Зашифровано, права, админы</small>
+              </div>
+            </div>
+            <div class="feat">
+              <span class="feat-ico">📸</span>
+              <div>
+                <b>Сторис</b>
+                <small>24ч, реакции, просмотры</small>
+              </div>
+            </div>
+            <div class="feat">
+              <span class="feat-ico">🛡️</span>
+              <div>
+                <b>Android Keystore</b>
+                <small>Аппаратное хранилище токенов</small>
+              </div>
+            </div>
+            <div class="feat">
+              <span class="feat-ico">🔔</span>
+              <div>
+                <b>FCM-пуши</b>
+                <small>Полноэкранный звонок из фона</small>
+              </div>
+            </div>
+          </div>
+          <div class="project-stack-row">
+            <span class="stag">Flutter</span>
+            <span class="stag">FastAPI</span>
+            <span class="stag">Redis</span>
+            <span class="stag">Cloudflare R2</span>
+            <span class="stag">Firebase</span>
+            <span class="stag">WebRTC</span>
+          </div>
+          <div class="project-btns">
+            <a class="btn-primary" href="https://github.com/DDmsngr/deepdrift-secure" target="_blank">GitHub ↗</a>
+          </div>
+        </div>
+      </article>
 
-        <div id="contact" class="contact-form-wrap">
-          <p class="form-title">Написать напрямую</p>
-          <form
-            action="https://formspree.io/f/maqabkbj"
-            method="POST"
-            class="contact-form"
-            id="contactForm"
-          >
-            <div class="form-group">
-              <label for="name">Имя</label>
-              <input type="text" id="name" name="name" placeholder="Как вас зовут?" required>
+      <article class="project-card project-card-rev fade-up">
+        <div class="project-visual pv-teal">
+          <div class="app-demo">
+            <div class="app-header-bar">
+              <span class="app-back">←</span>
+              <span class="app-title-bar">Реестр работ</span>
             </div>
-            <div class="form-group">
-              <label for="email">Email или Telegram</label>
-              <input type="text" id="email" name="email" placeholder="Как с вами связаться?" required>
+            <div class="app-card-item">
+              <div class="app-num">КОТТ-2026-042</div>
+              <div class="app-work-name">«Осенний свет»</div>
+              <div class="app-work-meta">Холст, масло · 80×60 см</div>
+              <div class="app-status sold">Продана</div>
             </div>
-            <div class="form-group">
-              <label for="message">Сообщение</label>
-              <textarea id="message" name="message" rows="4" placeholder="Опишите задачу..." required></textarea>
+            <div class="app-card-item">
+              <div class="app-num">КОТТ-2026-041</div>
+              <div class="app-work-name">«Городской мотив»</div>
+              <div class="app-work-meta">Акварель · 40×30 см</div>
+              <div class="app-status exhib">На выставке</div>
             </div>
-            <button type="submit" class="btn btn-send">Отправить</button>
-            <p class="form-success" id="formSuccess">Сообщение отправлено! Отвечу в течение часа.</p>
+            <div class="app-card-item">
+              <div class="app-num">КОТТ-2026-040</div>
+              <div class="app-work-name">«Портрет №7»</div>
+              <div class="app-work-meta">Графика · 50×70 см</div>
+              <div class="app-status avail">В наличии</div>
+            </div>
+          </div>
+          <div class="float-badge fb1 teal-badge">Android</div>
+          <div class="float-badge fb3 teal-badge">Offline</div>
+        </div>
+        <div class="project-info">
+          <div class="project-eyebrow">Проект 02 · Мобильное приложение</div>
+          <h3 class="project-name">КОТТ</h3>
+          <p class="project-tagline">Учёт произведений искусства — офлайн, без регистрации</p>
+          <p class="project-body">
+            Первое российское приложение для профессионального учёта работ. Реестр, выставки, продажи, PDF-документы за 10 секунд. Работает без интернета — данные только на телефоне.
+          </p>
+          <div class="feat-grid">
+            <div class="feat">
+              <span class="feat-ico">🗂</span>
+              <div>
+                <b>Уникальные номера</b>
+                <small>Фото, история, статусы</small>
+              </div>
+            </div>
+            <div class="feat">
+              <span class="feat-ico">📄</span>
+              <div>
+                <b>PDF за 10 секунд</b>
+                <small>Сертификат, договор, акт</small>
+              </div>
+            </div>
+            <div class="feat">
+              <span class="feat-ico">🏛</span>
+              <div>
+                <b>Выставки → CV</b>
+                <small>Обновляется автоматически</small>
+              </div>
+            </div>
+            <div class="feat">
+              <span class="feat-ico">📴</span>
+              <div>
+                <b>Полный офлайн</b>
+                <small>Без интернета и регистрации</small>
+              </div>
+            </div>
+          </div>
+          <div class="project-stack-row">
+            <span class="stag stag-teal">Android</span>
+            <span class="stag stag-teal">Kotlin</span>
+            <span class="stag stag-teal">SQLite</span>
+            <span class="stag stag-teal">RuStore</span>
+          </div>
+          <div class="project-btns">
+            <a class="btn-primary btn-teal" href="https://ddmsngr.github.io/KOTT-site/" target="_blank">Сайт проекта ↗</a>
+            <a class="btn-ghost btn-ghost-teal" href="https://www.rustore.ru/catalog/app/ru.kott.app" target="_blank">RuStore ↗</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="about" class="section section-about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Обо мне</h2>
+      </div>
+      <div class="about-grid fade-up">
+        <div class="about-text">
+          <p>Я разработчик полного цикла — делаю и мобильные приложения, и сайты. Начинал с простых лендингов, сейчас в портфолио есть мессенджер с собственным протоколом шифрования и приложение для художников, которое реально используют люди.</p>
+          <p>Мне важно не просто написать код, а решить задачу клиента. Поэтому сначала разбираюсь в задаче, потом открываю редактор.</p>
+          <p>Работаю дистанционно, на связи каждый день. Отвечаю быстро.</p>
+          <div class="value-list">
+            <div class="value-item">
+              <span class="vi">⚡</span>
+              <div><b>Быстрый старт</b><p>Берусь за задачу сразу, не тяну с оценкой</p></div>
+            </div>
+            <div class="value-item">
+              <span class="vi">🎯</span>
+              <div><b>Понятная коммуникация</b><p>Без воды — пишу что делаю и когда будет готово</p></div>
+            </div>
+            <div class="value-item">
+              <span class="vi">🔧</span>
+              <div><b>После сдачи не пропадаю</b><p>Поправлю, объясню, помогу разобраться</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-side">
+          <div class="skills-group">
+            <div class="sg-title">Мобильная разработка</div>
+            <div class="skill-row"><span>Flutter / Dart</span><div class="sk-bar"><div class="sk-fill" style="width:90%"></div></div><span class="sk-pct">90%</span></div>
+            <div class="skill-row"><span>React Native</span><div class="sk-bar"><div class="sk-fill" style="width:70%"></div></div><span class="sk-pct">70%</span></div>
+            <div class="skill-row"><span>Android (Kotlin)</span><div class="sk-bar"><div class="sk-fill" style="width:75%"></div></div><span class="sk-pct">75%</span></div>
+          </div>
+          <div class="skills-group">
+            <div class="sg-title">Веб</div>
+            <div class="skill-row"><span>HTML / CSS / JS</span><div class="sk-bar"><div class="sk-fill" style="width:85%"></div></div><span class="sk-pct">85%</span></div>
+            <div class="skill-row"><span>Tilda</span><div class="sk-bar"><div class="sk-fill" style="width:80%"></div></div><span class="sk-pct">80%</span></div>
+            <div class="skill-row"><span>GitHub Pages</span><div class="sk-bar"><div class="sk-fill" style="width:90%"></div></div><span class="sk-pct">90%</span></div>
+          </div>
+          <div class="skills-group">
+            <div class="sg-title">Бэкенд</div>
+            <div class="skill-row"><span>FastAPI / Python</span><div class="sk-bar"><div class="sk-fill" style="width:80%"></div></div><span class="sk-pct">80%</span></div>
+            <div class="skill-row"><span>Redis / Firebase</span><div class="sk-bar"><div class="sk-fill" style="width:70%"></div></div><span class="sk-pct">70%</span></div>
+            <div class="skill-row"><span>WebRTC / TURN</span><div class="sk-bar"><div class="sk-fill" style="width:75%"></div></div><span class="sk-pct">75%</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title">Что делаю</h2>
+      </div>
+      <div class="services-grid">
+        <div class="svc fade-up">
+          <div class="svc-ico">🌐</div>
+          <h3>Сайты и лендинги</h3>
+          <p>Сайты-визитки, лендинги, портфолио. На Tilda, GitHub Pages или чистом HTML. Адаптация под мобильные, форма заявки.</p>
+          <div class="svc-price">от 5 000 ₽</div>
+        </div>
+        <div class="svc svc-accent fade-up">
+          <div class="svc-ico">📱</div>
+          <h3>Мобильные приложения</h3>
+          <p>Android на Flutter или React Native. От простого инструмента до сложного продукта с бэкендом, пушами и шифрованием.</p>
+          <div class="svc-price">от 25 000 ₽</div>
+        </div>
+        <div class="svc fade-up">
+          <div class="svc-ico">⚙️</div>
+          <h3>Бэкенд и API</h3>
+          <p>FastAPI-сервер, Redis, Cloudflare R2, Firebase. WebSocket, WebRTC, платёжные интеграции.</p>
+          <div class="svc-price">по договорённости</div>
+        </div>
+        <div class="svc fade-up">
+          <div class="svc-ico">🔐</div>
+          <h3>Безопасность</h3>
+          <p>E2EE-шифрование, Android Keystore, биометрия, PIN-экраны, защита данных пользователей.</p>
+          <div class="svc-price">по договорённости</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section section-contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2 class="section-title">Написать</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-left fade-up">
+          <p class="contact-lead">Расскажите о задаче — отвечу в течение часа и предложу решение.</p>
+          <div class="contact-ways">
+            <a class="cway" href="tel:+78129254652">
+              <span class="cway-ico ph">☎</span>
+              <div><div class="cway-label">Телефон</div><div class="cway-val">+7 812 925 46 52</div></div>
+              <span class="cway-arr">→</span>
+            </a>
+            <a class="cway" href="https://github.com/DDmsngr" target="_blank">
+              <span class="cway-ico gh">GH</span>
+              <div><div class="cway-label">GitHub</div><div class="cway-val">DDmsngr</div></div>
+              <span class="cway-arr">→</span>
+            </a>
+            <a class="cway" href="mailto:9254652@bk.ru">
+              <span class="cway-ico ml">@</span>
+              <div><div class="cway-label">Email</div><div class="cway-val">9254652@bk.ru</div></div>
+              <span class="cway-arr">→</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact-right fade-up">
+          <form action="https://formspree.io/f/maqabkbj" method="POST" class="cform" id="contactForm">
+            <div class="form-row-2">
+              <div class="fgroup">
+                <label for="fname">Имя</label>
+                <input type="text" id="fname" name="name" placeholder="Как вас зовут?" required>
+              </div>
+              <div class="fgroup">
+                <label for="fcontact">Email</label>
+                <input type="email" id="fcontact" name="contact" placeholder="ваш@email.com" required>
+              </div>
+            </div>
+            <div class="fgroup">
+              <label for="ftype">Тип задачи</label>
+              <select id="ftype" name="subject">
+                <option value="">Выберите...</option>
+                <option>Сайт / лендинг</option>
+                <option>Мобильное приложение</option>
+                <option>Бэкенд / API</option>
+                <option>Другое</option>
+              </select>
+            </div>
+            <div class="fgroup">
+              <label for="fmsg">Описание задачи</label>
+              <textarea id="fmsg" name="message" rows="5" placeholder="Что нужно сделать, дедлайн, бюджет..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit" id="submitBtn">
+              <span id="btnText">Отправить заявку →</span>
+              <span id="btnLoader" style="display:none">Отправка...</span>
+            </button>
+            <p class="msg-ok" id="formSuccess">✓ Отправлено! Отвечу в течение часа.</p>
+            <p class="msg-err" id="formError">Ошибка. Напишите напрямую в Telegram.</p>
           </form>
         </div>
-
       </div>
-    </section>
-
-  </main>
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="container">
-      <span>© 2026 Алексей</span>
-      <span>Сайты и приложения под ключ</span>
+      <div class="footer-inner">
+        <a href="#" class="nav-logo-img"><img src="logo.png" alt="Логотип" height="32" style="display:block"></a>
+        <span class="footer-copy">© 2026 Алексей — разработка под ключ</span>
+        <div class="footer-socials">
+          <a href="https://t.me/DDmsngr" target="_blank">TG</a>
+          <a href="https://github.com/DDmsngr" target="_blank">GH</a>
+        </div>
+      </div>
     </div>
   </footer>
 
   <script>
     const form = document.getElementById('contactForm');
-    const success = document.getElementById('formSuccess');
+    const btnText = document.getElementById('btnText');
+    const btnLoader = document.getElementById('btnLoader');
+    const submitBtn = document.getElementById('submitBtn');
+
     form.addEventListener('submit', async function(e) {
       e.preventDefault();
-      const data = new FormData(form);
-      const res = await fetch(form.action, {
-        method: 'POST',
-        body: data,
-        headers: { 'Accept': 'application/json' }
-      });
-      if (res.ok) {
-        form.reset();
-        success.style.display = 'block';
-        setTimeout(() => success.style.display = 'none', 5000);
-      }
+      btnText.style.display = 'none';
+      btnLoader.style.display = 'inline';
+      submitBtn.disabled = true;
+      document.getElementById('formSuccess').style.display = 'none';
+      document.getElementById('formError').style.display = 'none';
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST', body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) { form.reset(); document.getElementById('formSuccess').style.display = 'block'; }
+        else document.getElementById('formError').style.display = 'block';
+      } catch { document.getElementById('formError').style.display = 'block'; }
+      btnText.style.display = 'inline';
+      btnLoader.style.display = 'none';
+      submitBtn.disabled = false;
     });
+
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(en => { if (en.isIntersecting) en.target.classList.add('visible'); });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.fade-up').forEach(el => io.observe(el));
   </script>
 
 </body>
